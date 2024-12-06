@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>??.??? fps</title>
+    </head>
+    <body>
+        <h1 id="trace_name"></h1>
+        <canvas height="800" id="gfx-main" width="1800"></canvas>
+        <script src="/dist/gl-vs-gpu.js"></script>
+        <script>
+            const testCase = "test1";
+            const graphLib = "webgl";
+            const difficulty = "hard";
+            const canvas = document.getElementById("gfx-main");
+            //(new GlVsGpu.WebGLTest1Render(canvas, null, difficulty)).Initialize();
+            (new GlVsGpu.WebGPUTest1Render(canvas, null, difficulty)).Initialize();
+        </script>
+    </body>
+</html>
